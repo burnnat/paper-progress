@@ -85,38 +85,26 @@ To change the progress bar background color:
 
       vertical: false,
 
-      axis: 'x',
-      crossAxis: 'y',
       dimension: 'width',
       crossDimension: 'height',
-      offset: 'offsetWidth',
       start: 'left',
       crossStart: 'bottom',
-      edge: 'right',
       crossEdge: 'top',
 
       verticalChanged: function(wasVertical, isVertical) {
         var values = isVertical
           ? {
-            axis: 'y',
-            crossAxis: 'x',
             dimension: 'height',
             crossDimension: 'width',
-            offset: 'offsetHeight',
             start: 'bottom',
             crossStart: 'left',
-            edge: 'top',
             crossEdge: 'right'
           }
           : {
-            axis: 'x',
-            crossAxis: 'y',
             dimension: 'width',
             crossDimension: 'height',
-            offset: 'offsetWidth',
             start: 'left',
             crossStart: 'bottom',
-            edge: 'right',
             crossEdge: 'top'
           };
 
